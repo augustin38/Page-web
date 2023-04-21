@@ -1,0 +1,75 @@
+html{
+  height: 100%;
+  width: 100%;
+  background-color: #EDEFEE;
+  scroll-behavior: smooth;
+}
+p{
+  font-size: 20px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  color: #41403C;
+  scroll-behavior: smooth;
+  font-family: apple-system;
+  text-align: center;
+}
+h1{
+  pointer-events: none;
+  text-decoration: underline;
+  text-decoration-color: #AA210F;
+  margin-bottom: 1.5em;
+}
+h3{
+  pointer-events: none;
+  margin-top: 1em ;
+  margin-bottom: 0.5em;
+}
+a{
+  color: #AA210F;
+}
+img{
+      margin: 1em;
+}
+footer{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #D08856;
+  justify-content: center;
+}
+.big_space{
+  height: 40em;
+  width: 100%;
+  background-color: #EDEFEE;
+}
+.home_button{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  display: block;
+}
+::-webkit-scrollbar {
+            width: 9.8px;
+            height: min-content;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #AA210F;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #AA2101;
+        }
