@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>frises_cartes_graphiques</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <canvas id="buyers" width="1200" height="800"></canvas>
+  <script>
+    // line chart data
+    var buyerData = {
+        labels : ["January","February","March","April","May","June"],
+        datasets : [
+        {
+            fillColor : "rgba(172,194,132,0.4)",
+            strokeColor : "#ACC26D",
+            pointColor : "#fff",
+            pointStrokeColor : "#9DB86D",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+    }
+    // get line chart canvas
+    var buyers = document.getElementById('buyers').getContext('2d');
+    // draw line chart
+    new Chart(buyers).Line(buyerData);
+  </script>
+</body>
+</html>
+

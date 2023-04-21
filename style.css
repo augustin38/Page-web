@@ -1,0 +1,368 @@
+html{
+  height: 100%;
+  width: 100%;
+  background-color: #EDEFEE;
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  color: #41403C;
+  scroll-behavior: smooth;
+  font-family: apple-system;
+  text-align: center;
+}
+p{
+  font-size: 20px;
+}
+h1{
+  pointer-events: none;
+  text-decoration: underline;
+  text-decoration-color: #AA210F;
+  margin-bottom: 1.5em;
+}
+h2{
+  margin-bottom: 1rem;
+}
+h3{
+  pointer-events: none;
+  margin-top: 1em ;
+  margin-bottom: 0.5em;
+}
+form h3{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+}
+a{
+  color: #AA210F;
+}
+img{
+  margin: 1em;
+}
+img:hover{
+  z-index:1;
+  transform:scale(1.02);
+}
+footer{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #D08856;
+  justify-content: center;
+}
+button{
+  height: 2rem;
+  width: 10rem;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #EDEFEE;
+}
+form p{
+  margin-bottom: 10px;
+}
+strong{
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+/* classes */
+
+.ctn{
+  margin: 2% 20px;
+}
+.big_space{
+  height: 40em;
+  width: 100%;
+  background-color: #EDEFEE;
+}
+.home_button{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin: 0px;
+  display: block;
+}
+.mini_icons{
+  height: 20px;
+  width: 20px;
+}
+.radio{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.checkbox_inline{
+  margin: 2rem;
+  width: 40%;
+  display: inline;
+}
+.number_year{
+  border-color: #41403C;
+  border-radius: 2rem;
+  background: #EDEFEE;
+}
+.checkbox_collées{
+  margin: 0;
+}
+.FORM {
+background: linear-gradient(to right bottom,#D1FAFF, #F1DAFF);
+min-height: 40vh;
+width: 40%;
+border-radius: 2rem;
+position: flex;
+margin-left: 30%;
+margin-right: 30%;
+margin-bottom: 2rem;
+box-shadow: 1px 1px 12px 12px rgba(0, 0, 0, .1);
+}
+.images{
+  position: flex;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 12px 12px rgba(0, 0, 0, .1);
+}
+.graphe_conso{
+  width: 40%;
+}
+.stat_appareils{
+  width: 34%;
+}
+.images_inline{
+  min-height: 250px;
+  background-color: #41403C;
+  display: inline;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 12px 12px rgba(0, 0, 0, .1);
+}
+.images_qui_defilent{
+  position: flex;
+  border-radius: 2rem;
+}
+
+.slidecontainer {
+  width: 70%;
+  padding-left: 15%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 1rem;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.slide_wcoded div div {
+  display: inline-block;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 2px;
+  margin-bottom: 45px;
+  }
+.slide_wcoded{
+  height: 50px;
+  overflow: hidden;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+}
+.slide_wcoded div:nth-child(1) div {
+  background: #ffa200;
+}
+.slide_wcoded div:nth-child(2) div {
+  background: #0946fe;
+}
+.slide_wcoded div:nth-child(3) div {
+  background:#ffde06;
+  color: #333
+}
+.slide_wcoded div:nth-child(4) div {
+  background:#8f55b6;
+}
+.slide_wcoded div:nth-child(1){
+  animation: anim 6s linear infinite;
+}
+
+/* keyframes */
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes anim {
+  0%{margin-top: -360px;}
+  4%{margin-top: -270px;}
+  25%{margin-top: -270px;}
+  29%{margin-top: -180px;}
+  50%{margin-top: -180px;}
+  54%{margin-top: -90px;}
+  75%{margin-top: -90px;}
+  79%{margin-top: 0px;}
+  99.99%{margin-top: 0px;}
+  100%{margin-top: -360px};
+}
+
+/* hot bar de l'index */
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EDEFEE;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style-type: none;
+    z-index: 1000;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+    z-index: 1000;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #41403C;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: #AA210F;
+    border-bottom: 2px solid #AA210F;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #EDEFEE;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(150,150,150,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+/* in test functions */
+
+::-webkit-scrollbar {
+            width: 9.8px;
+            height: min-content;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #AA210F;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #AA2101;
+        }
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.circle_gradient {
+  height: 10rem;
+  width: 10rem;
+  background:
+      radial-gradient(circle at 50% 0,
+        rgba(255,0,0,.5),
+        rgba(255,0,0,0) 70.71%),
+      radial-gradient(circle at 6.7% 75%,
+        rgba(0,0,255,.5),
+        rgba(0,0,255,0) 70.71%),
+      radial-gradient(circle at 93.3% 75%,
+        rgba(0,255,0,.5),
+        rgba(0,255,0,0) 70.71%) beige;
+  border-radius: 50%;
+}
+
